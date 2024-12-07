@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پخش موزیک</title>
+    <link rel="stylesheet" href="player.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="player-container">
+        <div class="player">
+            <div class="cover">
+                <img src="img/ec0fe5d8eabad6da2e5ea368746c0f85.jpg" alt="کاور موزیک">
+            </div>
+            <div class="info">
+                <h2 class="title">Summer</h2>
+                <p class="artist">خواننده: موسیقی آزاد</p>
+            </div>
+            <div class="controls">
+                <button id="prev" class="control-btn"><i class="fas fa-backward"></i></button>
+                <button id="play-pause" class="control-btn"><i class="fas fa-play"></i></button>
+                <button id="next" class="control-btn"><i class="fas fa-forward"></i></button>
+                <button id="repeat" class="control-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <input type="range" id="progress" min="0" max="100" value="0">
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+            <div class="lyrics">
+                <p id="lyrics-text">متن موزیک اینجا نمایش داده می‌شود...</p>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="mu/Fadaei - Iran Iran [320].mp3"></audio>
+    <script src="player.js"></script>
+</body>
+</html>
